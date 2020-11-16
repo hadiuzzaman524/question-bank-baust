@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BAUST_QUESTION_BANK.iml" filepath="$PROJECT_DIR$/.idea/modules/BAUST_QUESTION_BANK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BAUST_QUESTION_BANK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BAUST_QUESTION_BANK.app.iml" />
+    </modules>
+  </component>
+</project>

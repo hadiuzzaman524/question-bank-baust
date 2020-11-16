@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+
+        <item
+
+            android:title="Rate us"
+            android:icon="@drawable/rateus"
+            android:id="@+id/rateusid"/>
+
+        <item
+            android:id="@+id/visitwebsiteid"
+            android:icon="@drawable/ic_web_black_24dp"
+            android:title="Visit website" />
+        <item
+
+
+            android:title="" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/aboutusid"
+                android:icon="@drawable/aboutus"
+                android:title="About us" />
+            <item
+                android:id="@+id/sharewithid"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share with" />
+
+            <item
+                android:id="@+id/logoutid"
+                android:icon="@drawable/logout"
+                android:title="Logout"
+
+                />
+
+            <item
+                android:id="@+id/exitid"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Exit"
+                />
+
+        </menu>
+    </item>
+
+</menu>

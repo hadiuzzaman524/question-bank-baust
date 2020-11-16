@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".departments.me.ME_L4_T2_Questions">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/ME4217id"
+                        android:gravity="center">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ME 4217 (Power Plant Engineering)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/ME4217download"
+                        android:layout_weight=".5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/ME4219id"
+                        android:gravity="center">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ME 4219 (Automobile Engineering)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/ME4219download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/ME4233id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ME 4233 (Mechatronics)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/ME4233download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/IPE4207id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="IPE 4207 (Tool Engineering and Machine Tools)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/IPE4207download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/MEOPTIONAL2id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ME **** (Optional- II)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/MEOPTIONAL2download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".departments.me.ME_L1_T2_Questions">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/CHEM1203id"
+                        android:gravity="center">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="CHEM 1203 (Engineering Chemistry)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/CHEM1203download"
+                        android:layout_weight=".5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/CSE1271id"
+                        android:gravity="center">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="CSE 1271 (Computer Programming)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/CSE1271download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/HUM1215id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="HUM 1215 (English)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/HUM1215download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/MATH1201id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="MATH 1201 (Mathematics-II)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/MATH1201download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="3dp"
+                    android:background="#EAE5E5"
+                    android:padding="5dp"
+                    android:weightSum="4.5">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:id="@+id/PHY1205id"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="PHY (1205 Physics-II)"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".5"
+                        android:id="@+id/PHY1205download"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download_item" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
