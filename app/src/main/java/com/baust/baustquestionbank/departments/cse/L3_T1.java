@@ -20,6 +20,7 @@ import com.baust.baustquestionbank.adapter.YearShowAdapter;
 public class L3_T1 extends AppCompatActivity {
     ListView listView;
     String[] name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,42 +45,48 @@ public class L3_T1 extends AppCompatActivity {
 
                 String x = name[i].trim();
                 if (x.equals("Fall -2017")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Fall -2017");
+                    intent.putExtra("year", "Fall -2017");
                     startActivity(intent);
                 }
                 if (x.equals("Spring -2017")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Spring -2017");
+                    intent.putExtra("year", "Spring -2017");
                     startActivity(intent);
                 }
 
                 if (x.equals("Fall -2018")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Fall -2018");
+                    intent.putExtra("year", "Fall -2018");
                     startActivity(intent);
                 }
 
                 if (x.equals("Spring -2018")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Spring -2018");
+                    intent.putExtra("year", "Spring -2018");
                     startActivity(intent);
                 }
                 if (x.equals("Fall -2019")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Fall -2019");
+                    intent.putExtra("year", "Fall -2019");
                     startActivity(intent);
                 }
 
                 if (x.equals("Spring -2019")) {
-                    Intent intent=new Intent(L3_T1.this,L3_T1_Questions.class);
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.putExtra("year","Spring -2019");
+                    intent.putExtra("year", "Spring -2019");
+                    startActivity(intent);
+                }
+                if (x.equals("Summer -2020")) {
+                    Intent intent = new Intent(L3_T1.this, L3_T1_Questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year", "Summer -2020");
                     startActivity(intent);
                 }
             }

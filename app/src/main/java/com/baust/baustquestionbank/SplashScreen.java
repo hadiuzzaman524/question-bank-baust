@@ -21,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
         Window window = getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.signuplogin));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.commonColor));
 
         setContentView(R.layout.activity_splash_screen);
         currentUser= FirebaseAuth.getInstance().getCurrentUser();
@@ -55,7 +55,7 @@ public class SplashScreen extends AppCompatActivity {
         for(int p=10; p<=100; p+=10)
         {
             try{
-                Thread.sleep(190);
+                Thread.sleep(120);
             }
             catch (InterruptedException e)
             {

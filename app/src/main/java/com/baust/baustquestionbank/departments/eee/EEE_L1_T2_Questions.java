@@ -21,15 +21,20 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.baust.baustquestionbank.OnlinePdfView;
 import com.baust.baustquestionbank.OpenPdf;
 import com.baust.baustquestionbank.PdfView;
 import com.baust.baustquestionbank.R;
+import com.baust.baustquestionbank.Sheet;
 
-public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnClickListener {
+public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnClickListener , Sheet.ReadMethod{
+
     LinearLayout eee1201,phy1213,math1215,me1263,hum1235;
     ImageView eee1201d,phy1213d,math1215d,me1263d,hum1235d;
     String year = "";
-
+    View globalView;
+    String examyear = "";
+    OpenPdf file = new OpenPdf();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,549 +85,51 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
 
     }
 
+
     @Override
     public void onClick(View view) {
 
+        globalView=view;
         if (year.equals("Fall -2017")) {
-            downloadFall17(view);
+            downloadQuestions(view,"Fall -2017");
+            examyear="Fall -2017";
         }
         if (year.equals("Spring -2017")) {
-            downloadSpring17(view);
+            downloadQuestions(view,"Spring -2017");
+            examyear="Spring -2017";
 
         }
         if (year.equals("Fall -2018")) {
-            downloadFall18(view);
+            downloadQuestions(view,"Fall -2018");
+            examyear="Fall -2018";
         }
         if (year.equals("Spring -2018")) {
-            downloadSpring18(view);
+            downloadQuestions(view,"Fall -2018");
+            examyear="Spring -2018";
         }
         if (year.equals("Fall -2019")) {
-            downloadFall19(view);
+            downloadQuestions(view,"Fall -2019");
+            examyear="Fall -2019";
         }
         if (year.equals("Spring -2019")) {
 
-            downloadSpring19(view);
+            downloadQuestions(view,"Spring -2019");
+            examyear="Spring -2019";
         }
-    }
+        if (year.equals("Summer -2020")) {
 
-
-
-    private void downloadFall17(View view) {
-        OpenPdf file = new OpenPdf();
-
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "F17eee_EEE1201";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
-
-            String link = "";
-            String pdfName = "F17eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "F17eee_PHY1213";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.PHY1213download) {
-
-
-            String link = "";
-            String pdfName = "F17eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "F17eee_MATH1215";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "F17eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "F17eee_ME1263";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263download) {
-
-            String link = "";
-            String pdfName = "F17eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "F17eee_HUM1235";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "F17eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-    }
-    private void downloadSpring17(View view) {
-        OpenPdf file = new OpenPdf();
-
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "S17eee_EEE1201";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
-
-            String link = "";
-            String pdfName = "S17eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "S17eee_PHY1213";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.PHY1213download) {
-
-
-            String link = "";
-            String pdfName = "S17eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "S17eee_MATH1215";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "S17eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "S17eee_ME1263";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263download) {
-
-            String link = "";
-            String pdfName = "S17eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "S17eee_HUM1235";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "S17eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-    }
-    private void downloadFall18(View view) {
-        OpenPdf file = new OpenPdf();
-
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "F18eee_EEE1201";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
-
-            String link = "";
-            String pdfName = "F18eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "F18eee_PHY1213";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.PHY1213download) {
-
-
-            String link = "";
-            String pdfName = "F18eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "F18eee_MATH1215";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "F18eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "F18eee_ME1263";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263download) {
-
-            String link = "";
-            String pdfName = "F18eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "F18eee_HUM1235";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "F18eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-    }
-    private void downloadSpring18(View view) {
-        OpenPdf file = new OpenPdf();
-
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "S18eee_EEE1201";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
-
-            String link = "";
-            String pdfName = "S18eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "S18eee_PHY1213";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.PHY1213download) {
-
-
-            String link = "";
-            String pdfName = "S18eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "S18eee_MATH1215";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "S18eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "S18eee_ME1263";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263download) {
-
-            String link = "";
-            String pdfName = "S18eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "S18eee_HUM1235";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "S18eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
+            downloadQuestions(view,"Summer -2020");
+            examyear="Summer -2020";
         }
 
     }
 
 
-    private void downloadFall19(View view) {
-        OpenPdf file = new OpenPdf();
+    private void downloadQuestions(View view,String Y){
 
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "F19eee_EEE1201";
+        if (view.getId()==R.id.EEE1201id)
+        {
+            String pdfName = Y+"eee_EEE1201";
             if (file.isDownload(pdfName)) {
 
                 Uri uri = file.open(pdfName);
@@ -632,23 +139,14 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
                 startActivity(intent);
             }
             else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
-
-            String link = "";
-            String pdfName = "F19eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
 
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "F19eee_PHY1213";
+        if (view.getId()==R.id.PHY1213id)
+        {
+            String pdfName = Y+"eee_PHY1213";
             if (file.isDownload(pdfName)) {
 
                 Uri uri = file.open(pdfName);
@@ -658,22 +156,14 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
                 startActivity(intent);
             }
             else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
-        if (view.getId() == R.id.PHY1213download) {
 
-
-            String link = "";
-            String pdfName = "F19eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "F19eee_MATH1215";
+        if (view.getId()==R.id.MATH1215id)
+        {
+            String pdfName = Y+"eee_MATH1215";
             if (file.isDownload(pdfName)) {
 
                 Uri uri = file.open(pdfName);
@@ -683,20 +173,14 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
                 startActivity(intent);
             }
             else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "F19eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "F19eee_ME1263";
+
+        if (view.getId()==R.id.ME1263id)
+        {
+            String pdfName = Y+"eee_ME1263";
             if (file.isDownload(pdfName)) {
 
                 Uri uri = file.open(pdfName);
@@ -706,21 +190,15 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
                 startActivity(intent);
             }
             else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
-        if (view.getId() == R.id.ME1263download) {
 
-            String link = "";
-            String pdfName = "F19eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "F19eee_HUM1235";
+
+        if (view.getId()==R.id.HUM1235id)
+        {
+            String pdfName = Y+"eee_HUM1235";
             if (file.isDownload(pdfName)) {
 
                 Uri uri = file.open(pdfName);
@@ -730,148 +208,926 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
                 startActivity(intent);
             }
             else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "F19eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void offlineRead(boolean flag) {
+        if (examyear.equals("Fall -2017")) {
+
+            String matchYear = "Fall -2017";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
             }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Spring -2017")) {
+
+            String matchYear = "Spring -2017";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Fall -2018")) {
+
+            String matchYear = "Fall -2018";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Spring -2018")) {
+
+            String matchYear = "Spring -2018";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Fall -2019")) {
+
+            String matchYear = "Fall -2019";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Spring -2019")) {
+
+            String matchYear = "Spring -2019";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        }
+        if (examyear.equals("Summer -2020")) {
+
+            String matchYear = "Summer -2020";
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String pdfName = matchYear+"eee_EEE1201";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String pdfName = matchYear+"eee_PHY1213";
+
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String pdfName = matchYear+"eee_MATH1215";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String pdfName = matchYear+"eee_ME1263";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String pdfName = matchYear+"eee_HUM1235";
+                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
+                if (file.notDownload(pdfName)) {
+                    download(link, pdfName);
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
         }
 
     }
+    @Override
+    public void onlineRead(boolean flag) {
+        if (examyear.equals("Fall -2017")) {
 
-    private void downloadSpring19(View view) {
-        OpenPdf file = new OpenPdf();
+            if (globalView.getId() == R.id.EEE1201id) {
 
-        if (view.getId() == R.id.EEE1201id) {
-
-            String pdfName = "S19eee_EEE1201";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
                 startActivity(intent);
             }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.EEE1201download) {
 
-            String link = "";
-            String pdfName = "S19eee_EEE1201";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId() == R.id.PHY1213id) {
-
-            String pdfName = "S19eee_PHY1213";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+        if (examyear.equals("Spring -2017")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.PHY1213download) {
 
-
-            String link = "";
-            String pdfName = "S19eee_PHY1213";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215id) {
-            String pdfName = "S19eee_MATH1215";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+        if (examyear.equals("Fall -2018")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.MATH1215download) {
-            String link = "";
-            String pdfName = "S19eee_MATH1215";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263id) {
-            String pdfName = "S19eee_ME1263";
-            if (file.isDownload(pdfName)) {
 
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+        if (examyear.equals("Spring -2018")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.ME1263download) {
 
-            String link = "";
-            String pdfName = "S19eee_ME1263";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-            }
-        }
-        if (view.getId() == R.id.HUM1235id) {
-            String pdfName = "S19eee_HUM1235";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(EEE_L1_T2_Questions.this, PdfView.class);
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+        if (examyear.equals("Fall -2019")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
-            else {
-                Toast.makeText(getApplicationContext(), "Download first then try to open it!", Toast.LENGTH_SHORT).show();
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
             }
-        }
-        if (view.getId() == R.id.HUM1235download) {
-            String link = "";
-            String pdfName = "S19eee_HUM1235";
-            if (file.notDownload(pdfName)) {
-                download(link, pdfName);
-            } else {
-                Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
             }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
         }
+        if (examyear.equals("Spring -2019")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+        if (examyear.equals("Summer -2020")) {
+
+            if (globalView.getId() == R.id.EEE1201id) {
+
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+
+            if (globalView.getId()==R.id.PHY1213id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.MATH1215id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+            }
+
+            if (globalView.getId()==R.id.ME1263id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+            if (globalView.getId()==R.id.HUM1235id)
+            {
+                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
+                Intent intent=new Intent(EEE_L1_T2_Questions.this, OnlinePdfView.class);
+                intent.putExtra("pdflink",link);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+
+        }
+
 
     }
+
+
+
 
     //for download a pdf...
     public void download(String url, String pdfName) {
@@ -909,6 +1165,7 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -917,7 +1174,11 @@ public class EEE_L1_T2_Questions extends AppCompatActivity implements View.OnCli
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
+
+
 
 
 

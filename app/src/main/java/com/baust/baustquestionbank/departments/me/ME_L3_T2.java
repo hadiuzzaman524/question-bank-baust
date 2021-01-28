@@ -81,6 +81,12 @@ public class ME_L3_T2 extends AppCompatActivity {
                     intent.putExtra("year","Spring -2019");
                     startActivity(intent);
                 }
+                if (x.equals("Summer -2020")) {
+                    Intent intent=new Intent(ME_L3_T2.this,ME_L3_T2_Questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year","Summer -2020");
+                    startActivity(intent);
+                }
 
             }
         });

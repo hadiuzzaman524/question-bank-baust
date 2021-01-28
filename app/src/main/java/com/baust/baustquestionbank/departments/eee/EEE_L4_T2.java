@@ -81,6 +81,12 @@ public class EEE_L4_T2 extends AppCompatActivity {
                     intent.putExtra("year","Spring -2019");
                     startActivity(intent);
                 }
+                if (x.equals("Summer -2020")) {
+                    Intent intent=new Intent(EEE_L4_T2.this,EEE_L4_T2_Questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year","Spring -2019");
+                    startActivity(intent);
+                }
 
             }
         });

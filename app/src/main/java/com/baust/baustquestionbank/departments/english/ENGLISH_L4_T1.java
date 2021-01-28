@@ -81,6 +81,12 @@ public class ENGLISH_L4_T1 extends AppCompatActivity {
                     intent.putExtra("year","Spring -2019");
                     startActivity(intent);
                 }
+                if (x.equals("Summer -2020")) {
+                    Intent intent=new Intent(ENGLISH_L4_T1.this, ENGLISH_L4_T1_Questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year","Summer -2020");
+                    startActivity(intent);
+                }
 
             }
         });

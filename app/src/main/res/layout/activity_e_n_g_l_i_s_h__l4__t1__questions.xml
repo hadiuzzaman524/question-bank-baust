@@ -53,7 +53,7 @@
                     android:id="@+id/ENG4101download"
                     android:layout_weight=".5"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                     />
 
 
             </LinearLayout>
@@ -95,7 +95,7 @@
                     android:layout_weight=".5"
                     android:id="@+id/ENG4102download"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                     />
 
             </LinearLayout>
 
@@ -135,7 +135,7 @@
                     android:layout_weight=".5"
                     android:id="@+id/ENG4103download"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                    />
 
             </LinearLayout>
 
@@ -175,7 +175,7 @@
                     android:layout_weight=".5"
                     android:id="@+id/ENG4104download"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                     />
 
 
 
@@ -217,7 +217,7 @@
                     android:layout_weight=".5"
                     android:id="@+id/ENG4105download"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                    />
 
             </LinearLayout>
             <LinearLayout
@@ -256,7 +256,7 @@
                     android:layout_weight=".5"
                     android:id="@+id/ENG4106download"
                     android:scaleType="fitXY"
-                    android:src="@drawable/download_item" />
+                   />
 
             </LinearLayout>
         </LinearLayout>

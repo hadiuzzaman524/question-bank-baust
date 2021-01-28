@@ -81,6 +81,12 @@ public class IPE_L2_T1 extends AppCompatActivity {
                     intent.putExtra("year","Spring -2019");
                     startActivity(intent);
                 }
+                if (x.equals("Summer -2020")) {
+                    Intent intent=new Intent(IPE_L2_T1.this,IPE_L2_T1_Questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year","Summer -2020");
+                    startActivity(intent);
+                }
 
             }
         });

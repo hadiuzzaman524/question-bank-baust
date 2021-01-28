@@ -82,6 +82,12 @@ public class BBA_L2_T2 extends AppCompatActivity {
                     intent.putExtra("year","Spring -2019");
                     startActivity(intent);
                 }
+                if (x.equals("Summer -2020")) {
+                    Intent intent=new Intent(BBA_L2_T2.this,BBA_L2_T2_questions.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.putExtra("year","Summer -2020");
+                    startActivity(intent);
+                }
 
             }
         });

@@ -31,13 +31,11 @@ import com.baust.baustquestionbank.departments.ME;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener
-
-{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
-    CardView cse,eee,me,ipe,civil,bba,english,mba;
+    CardView cse, eee, me, ipe, civil, bba, english, mba;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +46,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.signuplogin));
 
         setContentView(R.layout.activity_main);
-        cse=findViewById(R.id.cseid);
-        eee=findViewById(R.id.eeeid);
-        me=findViewById(R.id.meid);
-        ipe=findViewById(R.id.ipeid);
-        civil=findViewById(R.id.civilid);
-        bba=findViewById(R.id.bbaid);
-        english=findViewById(R.id.englishid);
-        mba=findViewById(R.id.mbaid);
+        cse = findViewById(R.id.cseid);
+        eee = findViewById(R.id.eeeid);
+        me = findViewById(R.id.meid);
+        ipe = findViewById(R.id.ipeid);
+        civil = findViewById(R.id.civilid);
+        bba = findViewById(R.id.bbaid);
+        english = findViewById(R.id.englishid);
+        mba = findViewById(R.id.mbaid);
 
         cse.setOnClickListener(this);
         eee.setOnClickListener(this);
@@ -91,43 +89,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        if (view.getId()==R.id.cseid)
-        {
+        if (view.getId() == R.id.cseid) {
             startActivity(new Intent(MainActivity.this, CSE.class));
         }
-        if (view.getId()==R.id.eeeid)
-        {
+        if (view.getId() == R.id.eeeid) {
             startActivity(new Intent(MainActivity.this, EEE.class));
         }
 
-        if (view.getId()==R.id.bbaid)
-        {
+        if (view.getId() == R.id.bbaid) {
             startActivity(new Intent(MainActivity.this, BBA.class));
         }
 
-        if (view.getId()==R.id.englishid)
-        {
+        if (view.getId() == R.id.englishid) {
             startActivity(new Intent(MainActivity.this, ENGLISH.class));
         }
-        if (view.getId()==R.id.ipeid)
-        {
+        if (view.getId() == R.id.ipeid) {
             startActivity(new Intent(MainActivity.this, IPE.class));
-        }  if (view.getId()==R.id.meid)
-        {
+        }
+        if (view.getId() == R.id.meid) {
             startActivity(new Intent(MainActivity.this, ME.class));
         }
-        if (view.getId()==R.id.mbaid)
-        {
-            Toast.makeText(getApplicationContext(),"coming soon",Toast.LENGTH_SHORT).show();
-           // startActivity(new Intent(MainActivity.this, MBA.class));
+        if (view.getId() == R.id.mbaid) {
+            Toast.makeText(getApplicationContext(), "coming soon", Toast.LENGTH_SHORT).show();
+            // startActivity(new Intent(MainActivity.this, MBA.class));
         }
-        if (view.getId()==R.id.civilid)
-        {
-            Toast.makeText(getApplicationContext(),"coming soon",Toast.LENGTH_SHORT).show();
+        if (view.getId() == R.id.civilid) {
+            Toast.makeText(getApplicationContext(), "coming soon", Toast.LENGTH_SHORT).show();
             // startActivity(new Intent(MainActivity.this, CIVIL.class));
 
-          //  Sheet bottomSheet= new Sheet();
-           // bottomSheet.show(getSupportFragmentManager(), "bottomsheet");
+            //  Sheet bottomSheet= new Sheet();
+            // bottomSheet.show(getSupportFragmentManager(), "bottomsheet");
 
 
         }
@@ -155,14 +146,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-        if (menuItem.getItemId()==R.id.logoutid)
-        {
+        if (menuItem.getItemId() == R.id.logoutid) {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(MainActivity.this,SplashScreen.class));
+            startActivity(new Intent(MainActivity.this, SplashScreen.class));
             finish();
-            Toast.makeText(getApplicationContext(),"success",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
         }
-        if (menuItem.getItemId()==R.id.rateusid){
+        if (menuItem.getItemId() == R.id.rateusid) {
 
             //for rate us button
             try {
@@ -172,19 +162,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())
                 ));
             }
-           // Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_LONG).show();
+            // Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_LONG).show();
         }
-        if (menuItem.getItemId()==R.id.visitwebsiteid){
+        if (menuItem.getItemId() == R.id.visitwebsiteid) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://baust.edu.bd")));
 
         }
-        if (menuItem.getItemId()==R.id.aboutusid){
-            Intent intent=new Intent(MainActivity.this,AboutUs.class);
+        if (menuItem.getItemId() == R.id.aboutusid) {
+            Intent intent = new Intent(MainActivity.this, AboutUs.class);
             startActivity(intent);
 
 
         }
-        if (menuItem.getItemId()==R.id.sharewithid){
+        if (menuItem.getItemId() == R.id.sharewithid) {
 
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
@@ -196,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
-        if (menuItem.getItemId()==R.id.exitid){
+        if (menuItem.getItemId() == R.id.exitid) {
             finish();
         }
 
