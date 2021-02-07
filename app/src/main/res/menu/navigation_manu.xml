@@ -39,12 +39,6 @@
                 android:icon="@drawable/ic_share_black_24dp"
                 android:title="Share with" />
 
-            <item
-                android:id="@+id/logoutid"
-                android:icon="@drawable/logout"
-                android:title="Logout"
-
-                />
 
             <item
                 android:id="@+id/exitid"

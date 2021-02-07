@@ -28,10 +28,10 @@ public class CSE extends AppCompatActivity {
 
     ListView listView;
     String[] name;
-    int[] flags = {R.drawable.baustlogo, R.drawable.baustlogo,
-            R.drawable.baustlogo, R.drawable.baustlogo,
-            R.drawable.baustlogo, R.drawable.baustlogo,
-            R.drawable.baustlogo, R.drawable.baustlogo};
+    int[] flags = {R.drawable.main_logo, R.drawable.main_logo,
+            R.drawable.main_logo, R.drawable.main_logo,
+            R.drawable.main_logo, R.drawable.main_logo,
+            R.drawable.main_logo, R.drawable.main_logo};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

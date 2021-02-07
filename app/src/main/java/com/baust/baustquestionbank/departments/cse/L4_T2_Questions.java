@@ -1649,31 +1649,55 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
     }
 
+    private void downloadPdfFile(String link, String pdfName) {
+        if (file.notDownload(pdfName)) {
+            download(link, pdfName);
+        } else {
+            Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
+        }
+    }
+    //online load
+    private void checkAndOpenPdfFromOnline(Context context, String link) {
+        if (link.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Question is not available", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(context, OnlinePdfView.class);
+            intent.putExtra("pdflink", link);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+
+        }
+    }
 
     //for download a pdf...
     public void download(String url, String pdfName) {
 
-        try {
-
-            if (isNetworkAvailable()) {
-                DownloadManager downloadmanager;
-                Environment
-                        .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-                        .mkdirs();
-                downloadmanager = (DownloadManager) getApplication().getSystemService(Context.DOWNLOAD_SERVICE);
-                Uri uri = Uri.parse(url);
-                DownloadManager.Request request = new DownloadManager.Request(uri)
-                        .setTitle("Downloading")
-                        .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
-                                pdfName + ".pdf")
-                        .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                downloadmanager.enqueue(request);
-            } else {
-                Toast.makeText(getApplicationContext(), "No internet connection!", Toast.LENGTH_LONG).show();
+        if (url.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Question is not available", Toast.LENGTH_SHORT).show();
+        } else {
+            try {
+                if (isNetworkAvailable()) {
+                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
+                    DownloadManager downloadmanager;
+                    Environment
+                            .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                            .mkdirs();
+                    downloadmanager = (DownloadManager) getApplication().getSystemService(Context.DOWNLOAD_SERVICE);
+                    Uri uri = Uri.parse(url);
+                    DownloadManager.Request request = new DownloadManager.Request(uri)
+                            .setTitle("Downloading")
+                            .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
+                                    pdfName + ".pdf")
+                            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                    downloadmanager.enqueue(request);
+                } else {
+                    Toast.makeText(getApplicationContext(), "No internet connection!", Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(), "Can't download this pdf!", Toast.LENGTH_SHORT).show();
             }
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(), "Can't download this pdf!", Toast.LENGTH_SHORT).show();
         }
+
     }
 
     private boolean isNetworkAvailable() {
@@ -1683,7 +1707,6 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -1692,6 +1715,5 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

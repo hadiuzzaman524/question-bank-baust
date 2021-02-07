@@ -13,15 +13,16 @@
 
         <ImageView
             android:id="@+id/booklistid"
-            android:layout_weight=".7"
+            android:layout_weight=".6"
             android:layout_width="0dp"
             android:layout_gravity="center"
             android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
             android:layout_height="50dp"
             />
 
         <LinearLayout
-            android:layout_weight="3.5"
+            android:layout_weight="3.6"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent"

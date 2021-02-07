@@ -93,28 +93,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MainActivity.this, CSE.class));
         }
         if (view.getId() == R.id.eeeid) {
-            startActivity(new Intent(MainActivity.this, EEE.class));
+            //startActivity(new Intent(MainActivity.this, EEE.class));
+            Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_LONG).show();
         }
 
         if (view.getId() == R.id.bbaid) {
-            startActivity(new Intent(MainActivity.this, BBA.class));
+            Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_LONG).show();
+           // startActivity(new Intent(MainActivity.this, BBA.class));
         }
 
         if (view.getId() == R.id.englishid) {
-            startActivity(new Intent(MainActivity.this, ENGLISH.class));
+            Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_LONG).show();
+          //  startActivity(new Intent(MainActivity.this, ENGLISH.class));
         }
         if (view.getId() == R.id.ipeid) {
-            startActivity(new Intent(MainActivity.this, IPE.class));
+            Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_LONG).show();
+           // startActivity(new Intent(MainActivity.this, IPE.class));
         }
         if (view.getId() == R.id.meid) {
-            startActivity(new Intent(MainActivity.this, ME.class));
+            Toast.makeText(getApplicationContext(),"Coming Soon",Toast.LENGTH_LONG).show();
+            //startActivity(new Intent(MainActivity.this, ME.class));
         }
         if (view.getId() == R.id.mbaid) {
-            Toast.makeText(getApplicationContext(), "coming soon", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "coming Soon", Toast.LENGTH_SHORT).show();
             // startActivity(new Intent(MainActivity.this, MBA.class));
         }
         if (view.getId() == R.id.civilid) {
-            Toast.makeText(getApplicationContext(), "coming soon", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "coming Soon", Toast.LENGTH_SHORT).show();
             // startActivity(new Intent(MainActivity.this, CIVIL.class));
 
             //  Sheet bottomSheet= new Sheet();
@@ -129,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //storage permission dialog
     public boolean haveStoragePermission() {
+
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     == PackageManager.PERMISSION_GRANTED) {
@@ -146,12 +152,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-        if (menuItem.getItemId() == R.id.logoutid) {
+      /*  if (menuItem.getItemId() == R.id.logoutid) {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(MainActivity.this, SplashScreen.class));
             finish();
             Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
-        }
+        }*/
         if (menuItem.getItemId() == R.id.rateusid) {
 
             //for rate us button
