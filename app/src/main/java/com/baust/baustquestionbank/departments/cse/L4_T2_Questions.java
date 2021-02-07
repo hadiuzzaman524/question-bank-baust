@@ -283,110 +283,61 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
         }
@@ -398,108 +349,61 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
                 String pdfName = matchYear + "cse_cg";
 
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
 
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
@@ -512,110 +416,61 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
         }
@@ -623,459 +478,262 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
         if (examyear.equals("Spring -2018")) {
 
             String matchYear = "Spring -2018";
-
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
+
 
         }
 
         if (examyear.equals("Fall -2019")) {
 
             String matchYear = "Fall -2019";
-
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
+
 
         }
 
         if (examyear.equals("Spring -2019")) {
 
             String matchYear = "Spring -2019";
-
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
+
 
         }
 
         if (examyear.equals("Summer -2020")) {
 
             String matchYear = "Summer -2020";
-
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.vdid) {
                 String pdfName = matchYear + "cse_vd";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
 
             }
 
             if (globalView.getId() == R.id.prid) {
                 String pdfName = matchYear + "cse_pr";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.smid) {
                 String pdfName = matchYear + "cse_sm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
             }
             if (globalView.getId() == R.id.npid) {
                 String pdfName = matchYear + "cse_np";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
             if (globalView.getId() == R.id.cnsid) {
                 String pdfName = matchYear + "cse_cns";
-                String link = "https://www.webpages.uidaho.edu/~stevel/301answer/6.pdf";
-                if (file.notDownload(pdfName)) {
-                    download(link, pdfName);
-                    Toast.makeText(getApplicationContext(), "Download Start", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
-                }
-
+                String link = "";
+                downloadPdfFile(link, pdfName);
             }
 
         }
@@ -1090,563 +748,484 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
         if (examyear.equals("Spring -2017")) {
-
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
+
         }
         if (examyear.equals("Fall -2018")) {
-
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
         if (examyear.equals("Spring -2018")) {
-
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
         if (examyear.equals("Fall -2019")) {
-
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
-        if (examyear.equals("Spring -2019")) {
 
+
+
+        if (examyear.equals("Spring -2019")) {
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
+
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
 
         if (examyear.equals("Summer -2020")) {
-
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
             }
 
             if (globalView.getId() == R.id.dspid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
 
             if (globalView.getId() == R.id.vdid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
             }
 
 
             if (globalView.getId() == R.id.prid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dipid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.smid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.dwhdmid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.npid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
             if (globalView.getId() == R.id.cnsid) {
-                String link = "https://drive.google.com/file/d/1TPHsoBYBY-e_9P6OB-227HNF8mziG7ZZ/view";
-                Intent intent = new Intent(L4_T2_Questions.this, OnlinePdfView.class);
-                intent.putExtra("pdflink", link);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+
+                String link = "";
+                checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
+
 
             }
         }
-
     }
 
     private void downloadPdfFile(String link, String pdfName) {
@@ -1656,6 +1235,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             Toast.makeText(getApplicationContext(), "Already download it please open now!", Toast.LENGTH_SHORT).show();
         }
     }
+
     //online load
     private void checkAndOpenPdfFromOnline(Context context, String link) {
         if (link.isEmpty()) {
