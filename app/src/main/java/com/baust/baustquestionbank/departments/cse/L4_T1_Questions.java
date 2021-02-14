@@ -28,8 +28,8 @@ import com.baust.baustquestionbank.Sheet;
 
 public class L4_T1_Questions extends AppCompatActivity implements View.OnClickListener, Sheet.ReadMethod {
 
-    private LinearLayout AL, SEI, IM, AA, BGT, FTS, BMT, DNS, OOSE, ANNFS, DA, Bioinformatics, Robotics, ML, ASQT, CG, DSD, PIES, MCA, WA, PPDS;
-    private ImageView ALd, SEId, IMd, AAd, BGTd, FTSd, BMTd, DNSd, OOSEd, ANNFSd, DAd, Bioinformaticsd, Roboticsd, MLd, ASQTd, CGd, DSDd, PIESd, MCAd, WAd, PPDSd;
+    private LinearLayout AL, SEI, IM, DNS,  ML;
+  //  private ImageView ALd, SEId, IMd, AAd, BGTd, FTSd, BMTd, DNSd, OOSEd, ANNFSd, DAd, Bioinformaticsd, Roboticsd, MLd, ASQTd, CGd, DSDd, PIESd, MCAd, WAd, PPDSd;
     private String year = "";
     View globalView;
     String examyear = "";
@@ -58,91 +58,16 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
         AL = findViewById(R.id.alid);
         SEI = findViewById(R.id.seisid);
         IM = findViewById(R.id.imid);
-        AA = findViewById(R.id.aaid);
-        BGT = findViewById(R.id.bgtid);
-        FTS = findViewById(R.id.ftsid);
-        BMT = findViewById(R.id.bmtid);
         DNS = findViewById(R.id.dnsid);
-        OOSE = findViewById(R.id.ooseid);
-        ANNFS = findViewById(R.id.annfsid);
-        DA = findViewById(R.id.daid);
-        Bioinformatics = findViewById(R.id.bioinformaticsid);
-        Robotics = findViewById(R.id.roboticsid);
         ML = findViewById(R.id.mlid);
-        ASQT = findViewById(R.id.asqtid);
-        CG = findViewById(R.id.cgid);
-        DSD = findViewById(R.id.dsdid);
-        PIES = findViewById(R.id.piesid);
-        MCA = findViewById(R.id.mcaid);
-        WA = findViewById(R.id.waid);
-        PPDS = findViewById(R.id.ppdsid);
+
 
         AL.setOnClickListener(this);
         SEI.setOnClickListener(this);
         IM.setOnClickListener(this);
-        AA.setOnClickListener(this);
-        BGT.setOnClickListener(this);
-        FTS.setOnClickListener(this);
-        BMT.setOnClickListener(this);
         DNS.setOnClickListener(this);
-        OOSE.setOnClickListener(this);
-        ANNFS.setOnClickListener(this);
-        DA.setOnClickListener(this);
-        Bioinformatics.setOnClickListener(this);
-        Robotics.setOnClickListener(this);
         ML.setOnClickListener(this);
-        ASQT.setOnClickListener(this);
-        CG.setOnClickListener(this);
-        DSD.setOnClickListener(this);
-        PIES.setOnClickListener(this);
-        MCA.setOnClickListener(this);
-        WA.setOnClickListener(this);
-        PPDS.setOnClickListener(this);
 
-
-        ALd = findViewById(R.id.aldownload);
-        SEId = findViewById(R.id.seisdownload);
-        IMd = findViewById(R.id.imdownload);
-        AAd = findViewById(R.id.aadownload);
-        BGTd = findViewById(R.id.bgtdownload);
-        FTSd = findViewById(R.id.ftsdownload);
-        BMTd = findViewById(R.id.bmtdownload);
-        DNSd = findViewById(R.id.dnsdownload);
-        OOSEd = findViewById(R.id.oosedownload);
-        ANNFSd = findViewById(R.id.annfsdownload);
-        DAd = findViewById(R.id.dadownload);
-        Bioinformaticsd = findViewById(R.id.bioinformaticsdownload);
-        Roboticsd = findViewById(R.id.roboticsdownload);
-        MLd = findViewById(R.id.mldownload);
-        ASQTd = findViewById(R.id.asqtdownload);
-        CGd = findViewById(R.id.cgdownload);
-        DSDd = findViewById(R.id.dsddownload);
-        PIESd = findViewById(R.id.piesdownload);
-        MCAd = findViewById(R.id.mcadownload);
-        WAd = findViewById(R.id.wadownload);
-        PPDSd = findViewById(R.id.ppdsdownload);
-
-        ALd.setOnClickListener(this);
-        SEId.setOnClickListener(this);
-        IMd.setOnClickListener(this);
-        AAd.setOnClickListener(this);
-        BGTd.setOnClickListener(this);
-        FTSd.setOnClickListener(this);
-        BMTd.setOnClickListener(this);
-        DNSd.setOnClickListener(this);
-        OOSEd.setOnClickListener(this);
-        ANNFSd.setOnClickListener(this);
-        DAd.setOnClickListener(this);
-        Bioinformaticsd.setOnClickListener(this);
-        Roboticsd.setOnClickListener(this);
-        MLd.setOnClickListener(this);
-        ASQTd.setOnClickListener(this);
-        CGd.setOnClickListener(this);
-        DSDd.setOnClickListener(this);
-        PIESd.setOnClickListener(this);
-        MCAd.setOnClickListener(this);
-        WAd.setOnClickListener(this);
-        PPDSd.setOnClickListener(this);
 
     }
 
@@ -233,64 +158,7 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
             }
         }
 
-        if (view.getId() == R.id.aaid) {
-            String pdfName = Y + "cse_aa";
-            if (file.isDownload(pdfName)) {
 
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-
-
-        if (view.getId() == R.id.bgtid) {
-            String pdfName = Y + "cse_bg";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.ftsid) {
-            String pdfName = Y + "cse_fts";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.bmtid) {
-            String pdfName = Y + "cse_bmt";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
         if (view.getId() == R.id.dnsid) {
             String pdfName = Y + "cse_dns";
             if (file.isDownload(pdfName)) {
@@ -305,175 +173,8 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 bottomSheet.show(getSupportFragmentManager(), pdfName);
             }
         }
-        if (view.getId() == R.id.ooseid) {
-            String pdfName = Y + "cse_oose";
-            if (file.isDownload(pdfName)) {
 
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.annfsid) {
-            String pdfName = Y + "cse_annfs";
-            if (file.isDownload(pdfName)) {
 
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.daid) {
-            String pdfName = Y + "cse_da";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.bioinformaticsid) {
-            String pdfName = Y + "cse_bioinformatics";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.roboticsid) {
-            String pdfName = Y + "cse_robotics";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.asqtid) {
-            String pdfName = Y + "cse_asqt";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.cgid) {
-            String pdfName = Y + "cse_cg";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.dsdid) {
-            String pdfName = Y + "cse_dsd";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.piesid) {
-            String pdfName = Y + "cse_pies";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.mcaid) {
-            String pdfName = Y + "cse_mca";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-        if (view.getId() == R.id.waid) {
-            String pdfName = Y + "cse_wa";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
-
-        if (view.getId() == R.id.ppdsid) {
-            String pdfName = Y + "cse_ppds";
-            if (file.isDownload(pdfName)) {
-
-                Uri uri = file.open(pdfName);
-                Intent intent = new Intent(L4_T1_Questions.this, PdfView.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("uripath", uri);
-                startActivity(intent);
-            } else {
-                Sheet bottomSheet = new Sheet();
-                bottomSheet.show(getSupportFragmentManager(), pdfName);
-            }
-        }
         if (view.getId() == R.id.mlid) {
             String pdfName = Y + "cse_mL";
             if (file.isDownload(pdfName)) {
@@ -522,129 +223,27 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String pdfName = matchYear + "cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId() == R.id.bgtid) {
-                String pdfName = matchYear + "cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear + "cse_fts";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-
-            if (globalView.getId() == R.id.bmtid) {
-                String pdfName = matchYear + "cse_bmt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String pdfName = matchYear + "cse_oose";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
 
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String pdfName = matchYear + "cse_annfs";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String pdfName = matchYear + "cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String pdfName = matchYear + "cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String pdfName = matchYear + "cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
             if (globalView.getId() == R.id.mlid) {
                 String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String pdfName = matchYear + "cse_asqt";
 
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String pdfName = matchYear + "cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String pdfName = matchYear + "cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String pdfName = matchYear + "cse_pies";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String pdfName = matchYear + "cse_mca";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String pdfName = matchYear + "cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String pdfName = matchYear + "cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
         }
         if (examyear.equals("Spring -2017")) {
 
             String matchYear = "Spring -2017";
+
             if (globalView.getId() == R.id.alid) {
 
                 String pdfName = matchYear + "cse_aL";
@@ -668,123 +267,19 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String pdfName = matchYear + "cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId() == R.id.bgtid) {
-                String pdfName = matchYear + "cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear + "cse_fts";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-
-            if (globalView.getId() == R.id.bmtid) {
-                String pdfName = matchYear + "cse_bmt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String pdfName = matchYear + "cse_oose";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
 
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String pdfName = matchYear + "cse_annfs";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String pdfName = matchYear + "cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String pdfName = matchYear + "cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String pdfName = matchYear + "cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
             if (globalView.getId() == R.id.mlid) {
                 String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.asqtid) {
-                String pdfName = matchYear + "cse_asqt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String pdfName = matchYear + "cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String pdfName = matchYear + "cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String pdfName = matchYear + "cse_pies";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String pdfName = matchYear + "cse_mca";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String pdfName = matchYear + "cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String pdfName = matchYear + "cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
 
             }
 
@@ -817,625 +312,194 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String pdfName = matchYear + "cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId() == R.id.bgtid) {
-                String pdfName = matchYear + "cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear + "cse_fts";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-
-            if (globalView.getId() == R.id.bmtid) {
-                String pdfName = matchYear + "cse_bmt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String pdfName = matchYear + "cse_oose";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
 
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String pdfName = matchYear + "cse_annfs";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String pdfName = matchYear + "cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String pdfName = matchYear + "cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String pdfName = matchYear + "cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
             if (globalView.getId() == R.id.mlid) {
                 String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String pdfName = matchYear + "cse_asqt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String pdfName = matchYear + "cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String pdfName = matchYear + "cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
 
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String pdfName = matchYear + "cse_pies";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String pdfName = matchYear + "cse_mca";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String pdfName = matchYear + "cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String pdfName = matchYear + "cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
         }
         if (examyear.equals("Spring -2018")) {
 
             String matchYear = "Spring -2018";
 
-        }
-        if (examyear.equals("Fall -2019")) {
-            String matchYear="Fall -2019";
             if (globalView.getId() == R.id.alid) {
 
-                String pdfName = matchYear+"cse_aL";
+                String pdfName = matchYear + "cse_aL";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.seisid)
-            {
-                String pdfName = matchYear+"cse_seis";
+            if (globalView.getId() == R.id.seisid) {
+                String pdfName = matchYear + "cse_seis";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.imid)
-            {
-                String pdfName = matchYear+"cse_im";
+            if (globalView.getId() == R.id.imid) {
+                String pdfName = matchYear + "cse_im";
                 String link = "";
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId()==R.id.aaid)
-            {
-                String pdfName = matchYear+"cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId()==R.id.bgtid)
-            {
-                String pdfName = matchYear+"cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear+"cse_fts";
-
+            if (globalView.getId() == R.id.dnsid) {
+                String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.bmtid)
-            {
-                String pdfName = matchYear+"cse_bmt";
 
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-
-            }
-            if (globalView.getId()==R.id.dnsid)
-            {
-                String pdfName = matchYear+"cse_dns";
+            if (globalView.getId() == R.id.mlid) {
+                String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId()==R.id.ooseid)
-            {
-                String pdfName = matchYear+"cse_oose";
 
-                String link = "";
-                downloadPdfFile(link, pdfName);
+        }
+        if (examyear.equals("Fall -2019")) {
+            String matchYear = "Fall -2019";
 
+            if (globalView.getId() == R.id.alid) {
 
-            }
-            if (globalView.getId()==R.id.annfsid)
-            {
-                String pdfName = matchYear+"cse_annfs";
+                String pdfName = matchYear + "cse_aL";
+
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId()==R.id.daid)
-            {
-                String pdfName = matchYear+"cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
+            if (globalView.getId() == R.id.seisid) {
+                String pdfName = matchYear + "cse_seis";
 
-            }
-            if (globalView.getId()==R.id.bioinformaticsid)
-            {
-                String pdfName = matchYear+"cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.roboticsid)
-            {
-                String pdfName = matchYear+"cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.mlid)
-            {
-                String pdfName = matchYear+"cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId()==R.id.asqtid)
-            {
-                String pdfName = matchYear+"cse_asqt";
 
+            if (globalView.getId() == R.id.imid) {
+                String pdfName = matchYear + "cse_im";
                 String link = "";
                 downloadPdfFile(link, pdfName);
             }
-            if (globalView.getId()==R.id.cgid)
-            {
-                String pdfName = matchYear+"cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.dsdid)
-            {
-                String pdfName = matchYear+"cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
 
 
-            }
-            if (globalView.getId()==R.id.piesid)
-            {
-                String pdfName = matchYear+"cse_pies";
+            if (globalView.getId() == R.id.dnsid) {
+                String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId()==R.id.mcaid)
-            {
-                String pdfName = matchYear+"cse_mca";
+
+
+            if (globalView.getId() == R.id.mlid) {
+                String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.waid)
-            {
-                String pdfName = matchYear+"cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.ppdsid)
-            {
-                String pdfName = matchYear+"cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
 
             }
 
         }
         if (examyear.equals("Spring -2019")) {
-            String matchYear="Spring -2019";
+            String matchYear = "Spring -2019";
+
             if (globalView.getId() == R.id.alid) {
 
-                String pdfName = matchYear+"cse_aL";
+                String pdfName = matchYear + "cse_aL";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.seisid)
-            {
-                String pdfName = matchYear+"cse_seis";
+            if (globalView.getId() == R.id.seisid) {
+                String pdfName = matchYear + "cse_seis";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.imid)
-            {
-                String pdfName = matchYear+"cse_im";
+            if (globalView.getId() == R.id.imid) {
+                String pdfName = matchYear + "cse_im";
                 String link = "";
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId()==R.id.aaid)
-            {
-                String pdfName = matchYear+"cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId()==R.id.bgtid)
-            {
-                String pdfName = matchYear+"cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear+"cse_fts";
-
+            if (globalView.getId() == R.id.dnsid) {
+                String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.bmtid)
-            {
-                String pdfName = matchYear+"cse_bmt";
 
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-
-            }
-            if (globalView.getId()==R.id.dnsid)
-            {
-                String pdfName = matchYear+"cse_dns";
+            if (globalView.getId() == R.id.mlid) {
+                String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
-            if (globalView.getId()==R.id.ooseid)
-            {
-                String pdfName = matchYear+"cse_oose";
 
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.annfsid)
-            {
-                String pdfName = matchYear+"cse_annfs";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.daid)
-            {
-                String pdfName = matchYear+"cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.bioinformaticsid)
-            {
-                String pdfName = matchYear+"cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.roboticsid)
-            {
-                String pdfName = matchYear+"cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.mlid)
-            {
-                String pdfName = matchYear+"cse_mL";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.asqtid)
-            {
-                String pdfName = matchYear+"cse_asqt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.cgid)
-            {
-                String pdfName = matchYear+"cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.dsdid)
-            {
-                String pdfName = matchYear+"cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.piesid)
-            {
-                String pdfName = matchYear+"cse_pies";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.mcaid)
-            {
-                String pdfName = matchYear+"cse_mca";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.waid)
-            {
-                String pdfName = matchYear+"cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.ppdsid)
-            {
-                String pdfName = matchYear+"cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
         }
         if (examyear.equals("Summer -2020")) {
 
             String matchYear = "Summer -2020";
+
             if (globalView.getId() == R.id.alid) {
 
-                String pdfName = matchYear+"cse_aL";
+                String pdfName = matchYear + "cse_aL";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.seisid)
-            {
-                String pdfName = matchYear+"cse_seis";
+            if (globalView.getId() == R.id.seisid) {
+                String pdfName = matchYear + "cse_seis";
 
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.imid)
-            {
-                String pdfName = matchYear+"cse_im";
+            if (globalView.getId() == R.id.imid) {
+                String pdfName = matchYear + "cse_im";
                 String link = "";
                 downloadPdfFile(link, pdfName);
             }
 
-            if (globalView.getId()==R.id.aaid)
-            {
-                String pdfName = matchYear+"cse_aa";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
 
-            if (globalView.getId()==R.id.bgtid)
-            {
-                String pdfName = matchYear+"cse_bgt";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-
-            if (globalView.getId() == R.id.ftsid) {
-
-                String pdfName = matchYear+"cse_fts";
-
+            if (globalView.getId() == R.id.dnsid) {
+                String pdfName = matchYear + "cse_dns";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
             }
 
-            if (globalView.getId()==R.id.bmtid)
-            {
-                String pdfName = matchYear+"cse_bmt";
 
+            if (globalView.getId() == R.id.mlid) {
+                String pdfName = matchYear + "cse_mL";
                 String link = "";
                 downloadPdfFile(link, pdfName);
-
-
-
-            }
-            if (globalView.getId()==R.id.dnsid)
-            {
-                String pdfName = matchYear+"cse_dns";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.ooseid)
-            {
-                String pdfName = matchYear+"cse_oose";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.annfsid)
-            {
-                String pdfName = matchYear+"cse_annfs";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.daid)
-            {
-                String pdfName = matchYear+"cse_da";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.bioinformaticsid)
-            {
-                String pdfName = matchYear+"cse_bioinformatics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.roboticsid)
-            {
-                String pdfName = matchYear+"cse_robotics";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.mlid)
-            {
-                String pdfName = matchYear+"cse_mL";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.asqtid)
-            {
-                String pdfName = matchYear+"cse_asqt";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.cgid)
-            {
-                String pdfName = matchYear+"cse_cg";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.dsdid)
-            {
-                String pdfName = matchYear+"cse_dsd";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-
-            }
-            if (globalView.getId()==R.id.piesid)
-            {
-                String pdfName = matchYear+"cse_pies";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.mcaid)
-            {
-                String pdfName = matchYear+"cse_mca";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
-            }
-            if (globalView.getId()==R.id.waid)
-            {
-                String pdfName = matchYear+"cse_wa";
-
-                String link = "";
-                downloadPdfFile(link, pdfName);
-            }
-            if (globalView.getId()==R.id.ppdsid)
-            {
-                String pdfName = matchYear+"cse_ppds";
-                String link = "";
-                downloadPdfFile(link, pdfName);
-
 
             }
 
@@ -1470,123 +534,27 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
 
         }
+
         if (examyear.equals("Spring -2017")) {
+
 
             if (globalView.getId() == R.id.alid) {
 
@@ -1607,116 +575,16 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
@@ -1746,121 +614,23 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
         }
         if (examyear.equals("Spring -2018")) {
 
@@ -1883,121 +653,23 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
         }
         if (examyear.equals("Fall -2019")) {
 
@@ -2021,116 +693,16 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
@@ -2160,121 +732,22 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
         }
 
         if (examyear.equals("Summer -2020")) {
@@ -2299,117 +772,22 @@ public class L4_T1_Questions extends AppCompatActivity implements View.OnClickLi
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
-
             }
 
-            if (globalView.getId() == R.id.aaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.bgtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-            }
-            if (globalView.getId() == R.id.ftsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bmtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.dnsid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.ooseid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.annfsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.daid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.bioinformaticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.roboticsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
             if (globalView.getId() == R.id.mlid) {
                 String link = "";
                 checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
 
             }
-            if (globalView.getId() == R.id.asqtid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
 
-
-            }
-            if (globalView.getId() == R.id.cgid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.dsdid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.piesid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
-            if (globalView.getId() == R.id.mcaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-            }
-            if (globalView.getId() == R.id.waid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-            }
-            if (globalView.getId() == R.id.ppdsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L4_T1_Questions.this, link);
-
-
-            }
         }
 
     }

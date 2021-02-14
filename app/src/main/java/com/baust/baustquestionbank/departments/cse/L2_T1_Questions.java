@@ -28,7 +28,7 @@ import com.baust.baustquestionbank.Sheet;
 
 public class L2_T1_Questions extends AppCompatActivity implements View.OnClickListener, Sheet.ReadMethod{
 String year="";
-private LinearLayout DLD,DS,OOP,EDI,Mathiii;
+private LinearLayout DLD,DS,OOP,EDI,Mathiii,SCS;
 private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
     View globalView;
     String examyear="";
@@ -65,6 +65,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
         OOPd=findViewById(R.id.oopdownload);
         EDId=findViewById(R.id.edidownload);
         Mathiiid=findViewById(R.id.mathiiidownload);
+        SCS=findViewById(R.id.scs);
 
         DLD.setOnClickListener(this);
         DS.setOnClickListener(this);
@@ -76,6 +77,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
         OOPd.setOnClickListener(this);
         EDId.setOnClickListener(this);
         Mathiiid.setOnClickListener(this);
+       SCS.setOnClickListener(this);
     }
     @Override
     public void onClick(View view) {

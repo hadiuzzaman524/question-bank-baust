@@ -28,7 +28,7 @@ import com.baust.baustquestionbank.Sheet;
 
 public class L1_T2_Questions extends AppCompatActivity implements View.OnClickListener, Sheet.ReadMethod {
     String year = "";
-    LinearLayout DM, SPL, EDC, Mathii, Chemistry;
+    LinearLayout DM, SPL, EDC, Mathii, Chemistry,objectoriented,eenglish;
     ImageView DMd, SPLd, EDCd, Mathiid, Chemistryd;
 
     View globalView;
@@ -66,6 +66,8 @@ public class L1_T2_Questions extends AppCompatActivity implements View.OnClickLi
         Mathii = findViewById(R.id.mathiiid);
         Mathiid = findViewById(R.id.mathiidownload);
         Chemistry = findViewById(R.id.chemistryid);
+        objectoriented=findViewById(R.id.objectoriented);
+        eenglish=findViewById(R.id.eenglish);
 
         DM.setOnClickListener(this);
         DMd.setOnClickListener(this);
@@ -76,6 +78,8 @@ public class L1_T2_Questions extends AppCompatActivity implements View.OnClickLi
         Mathii.setOnClickListener(this);
         Mathiid.setOnClickListener(this);
         Chemistry.setOnClickListener(this);
+        objectoriented.setOnClickListener(this);
+        eenglish.setOnClickListener(this);
     }
 
     @Override

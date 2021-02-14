@@ -296,7 +296,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.compilerid) {
 
                 String pdfName = matchYear + "cse_compiler";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1ln3KQK53VAXrVf5XtHnmm23_3ICtIUx8";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -304,7 +304,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.osid) {
                 String pdfName = matchYear + "cse_os";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1FuDeoFZQADAUXQ9KSS2qpcfOU4zDnrgI";
                 downloadPdfFile(link, pdfName);
 
 
@@ -312,7 +312,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cnid) {
                 String pdfName = matchYear + "cse_cn";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1_s43cUBaJeuvtEX38wB322U84vXCfYwZ";
                 downloadPdfFile(link, pdfName);
 
 
@@ -320,14 +320,14 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.macsid) {
                 String pdfName = matchYear + "cse_macs";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1b8P6H_b-aSNAc1ipmkrd1RnsvXyM0dJ3";
                 downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.eeaid) {
                 String pdfName = matchYear + "cse_eea";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1ti02pguuacrrz0m-AUvw1GQnRLUpQThn";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -428,7 +428,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
                 String pdfName = matchYear + "cse_compiler";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1bZ_dZsLoF0RNLAiNmOg6aRpTp7TAy0Ot";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -436,7 +436,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.osid) {
                 String pdfName = matchYear + "cse_os";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1KiVenHV5fsO3Fjw_tgpC_CI-NXyhk_RF";
                 downloadPdfFile(link, pdfName);
 
 
@@ -444,7 +444,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cnid) {
                 String pdfName = matchYear + "cse_cn";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1wL7XHFSNrtNhxAWfmjceJWbtXb7JjMu1";
                 downloadPdfFile(link, pdfName);
 
 
@@ -452,13 +452,13 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.macsid) {
                 String pdfName = matchYear + "cse_macs";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1k2n5XAm8qRbktmmn13vL9h7r0FOOlHo8";
                 downloadPdfFile(link, pdfName);
             }
 
             if (globalView.getId() == R.id.eeaid) {
                 String pdfName = matchYear + "cse_eea";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1Vby5gJAhxdyAZwbMCZ-ZB6-now0wdyhn";
                 downloadPdfFile(link, pdfName);
             }
         }
@@ -472,7 +472,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
                 String pdfName = matchYear + "cse_compiler";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1Wj8nwdAFJwDL65IxSGxnTi2jAFM_ejiI";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -480,7 +480,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.osid) {
                 String pdfName = matchYear + "cse_os";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1wrYEraKn2t2h18LnBX8PYd_eC1XeUo46";
                 downloadPdfFile(link, pdfName);
 
 
@@ -488,7 +488,7 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cnid) {
                 String pdfName = matchYear + "cse_cn";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1Yt8xASqiF_2YPLvL2uLlZVYrmJ8G2iOB";
                 downloadPdfFile(link, pdfName);
 
 
@@ -496,13 +496,13 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.macsid) {
                 String pdfName = matchYear + "cse_macs";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=10aTHL7WcHHGdDUy94jTOc0ya0Fgd5ZwL";
                 downloadPdfFile(link, pdfName);
             }
 
             if (globalView.getId() == R.id.eeaid) {
                 String pdfName = matchYear + "cse_eea";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1-aBf8_on5MR4N-GrhapaO_eeZ-MLE4H4";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -596,34 +596,34 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.compilerid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1ln3KQK53VAXrVf5XtHnmm23_3ICtIUx8/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.osid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1FuDeoFZQADAUXQ9KSS2qpcfOU4zDnrgI/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.cnid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1_s43cUBaJeuvtEX38wB322U84vXCfYwZ/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.macsid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1b8P6H_b-aSNAc1ipmkrd1RnsvXyM0dJ3/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.eeaid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1ti02pguuacrrz0m-AUvw1GQnRLUpQThn/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
@@ -710,34 +710,34 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.compilerid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1bZ_dZsLoF0RNLAiNmOg6aRpTp7TAy0Ot/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.osid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1KiVenHV5fsO3Fjw_tgpC_CI-NXyhk_RF/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.cnid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1wL7XHFSNrtNhxAWfmjceJWbtXb7JjMu1/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.macsid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1k2n5XAm8qRbktmmn13vL9h7r0FOOlHo8/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.eeaid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1Vby5gJAhxdyAZwbMCZ-ZB6-now0wdyhn/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
@@ -749,70 +749,33 @@ public class L3_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.compilerid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1Wj8nwdAFJwDL65IxSGxnTi2jAFM_ejiI/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.osid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1wrYEraKn2t2h18LnBX8PYd_eC1XeUo46/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.cnid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1Yt8xASqiF_2YPLvL2uLlZVYrmJ8G2iOB/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
 
             }
 
             if (globalView.getId() == R.id.macsid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/10aTHL7WcHHGdDUy94jTOc0ya0Fgd5ZwL/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.eeaid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
-
-            }
-
-        }
-        if (examyear.equals("Spring -2017")) {
-
-            if (globalView.getId() == R.id.compilerid) {
-
-                String link = "";
-                checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
-
-            }
-
-            if (globalView.getId() == R.id.cnid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
-
-
-            }
-
-            if (globalView.getId() == R.id.macsid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
-
-
-            }
-
-            if (globalView.getId() == R.id.osid) {
-                String link = "";
-                checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
-
-
-            }
-
-            if (globalView.getId() == R.id.eeaid) {
-                String link = "";
+                String link = "https://drive.google.com/file/d/1-aBf8_on5MR4N-GrhapaO_eeZ-MLE4H4/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L3_T2_Questions.this, link);
 
             }
