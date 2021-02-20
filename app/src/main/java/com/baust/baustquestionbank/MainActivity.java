@@ -186,8 +186,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String subject = "BAUST QUESTION BANK";
-            String body = "A simple app for BAUSTIAN.\nhttps://play.google.com/store/apps/details?id=com.nested.etutor";
+            String subject = "Question Bank -BAUST";
+            String body = "A simple app for BAUSTIAN.\nhttps://play.google.com/store/apps/details?id="+getPackageName();
             intent.putExtra(Intent.EXTRA_SUBJECT, subject);
             intent.putExtra(Intent.EXTRA_TEXT, body);
             startActivity(Intent.createChooser(intent, "Share with "));
@@ -202,16 +202,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return false;
     }
 
-
-   /* @Override
-    public void onlineRead(boolean flag) {
-
-      Toast.makeText(getApplicationContext(),"Online",Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    public void offlineRead(boolean flag) {
-      Toast.makeText(getApplicationContext(),"offline",Toast.LENGTH_LONG).show();
-
-    }*/
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#fff"
     android:gravity="center"
     android:orientation="vertical"
     android:weightSum="2"
@@ -12,46 +12,46 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
         android:gravity="bottom"
-        android:layout_height="0dp">
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
-            android:background="@drawable/main_logo"
-            android:layout_height="80dp">
-        </ImageView>
+            android:background="@drawable/main_logo"></ImageView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Question Bank- BAUST"
+            android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold|italic"
-            android:text="BAUST QUESTION BANK"/>
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_height="0dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_marginTop="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:gravity="center"
+            android:text="@string/game_settings_dragNDropMove_checkBox"
+            android:textColor="#000"
             android:textSize="16sp"
-            android:textStyle="italic"
-           android:text="@string/game_settings_dragNDropMove_checkBox"
-            />
+            android:textStyle="italic" />
 
     </LinearLayout>
-
 
 
 </LinearLayout>

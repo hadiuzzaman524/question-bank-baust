@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BAUST QUESTION BANK</string>
+    <string name="app_name">Question Bank</string>
     <string name="eee_2105_electronics_i">EEE 2105 (Electronics I)</string>
     <string name="eee_2107_energy_conversion_i">EEE 2107 (Energy Conversion I)</string>
     <string name="cse_2109_computer_programming">CSE 2109 (Computer Programming)</string>
