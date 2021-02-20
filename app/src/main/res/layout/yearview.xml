@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/booklistid"
-            android:layout_weight=".6"
+            android:layout_weight="0"
             android:layout_width="0dp"
             android:layout_gravity="center"
             android:scaleType="fitXY"
@@ -22,7 +22,7 @@
             />
 
         <LinearLayout
-            android:layout_weight="3.6"
+            android:layout_weight="4.3"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent"
@@ -40,6 +40,8 @@
 
                 />
         </LinearLayout>
+
+
 
     </LinearLayout>
 

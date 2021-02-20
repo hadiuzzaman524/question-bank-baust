@@ -278,7 +278,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs";
                 downloadPdfFile(link, pdfName);
 
 
@@ -286,7 +286,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=10UNsDvdMWxUjpGM8GtOwYm2ohvZblkec";
                 downloadPdfFile(link, pdfName);
 
 
@@ -296,14 +296,14 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1ZeYjfzAzAEXPg_MMRbSrLzwSWZWwuptz";
                 downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -347,13 +347,13 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
         }
 
-        if (examyear.equals("Fall -2019")) {
+        if (examyear.equals("Spring -2019")) {
 
-            String matchYear = "Fall -2019";
+            String matchYear = "Spring -2019";
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1hFeJaPrS_dKSRNe7nxQIpUZFIeTLJRz-";
                 downloadPdfFile(link, pdfName);
 
 
@@ -361,7 +361,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=18zLjPDnJ_6Q_puZ-schJggKdvrYq30NE";
                 downloadPdfFile(link, pdfName);
 
 
@@ -371,22 +371,22 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=10WO23yeoeZyyqDelkFfhuU2VmRp9LdeR";
                 downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=1_gQ3I-g9s80IPQQB5eH7Cl4oZRn7dzZw";
                 downloadPdfFile(link, pdfName);
 
             }
         }
 
-        if (examyear.equals("Spring -2019")) {
+        if (examyear.equals("Fall -2019")) {
 
-            String matchYear = "Spring -2019";
+            String matchYear = "Fall -2019";
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
@@ -428,7 +428,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15U0s82n6EQn-9jVFM2RMLnfRmrf_n9dH";
                 downloadPdfFile(link, pdfName);
 
 
@@ -436,7 +436,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dspid) {
                 String pdfName = matchYear + "cse_dsp";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15Tm5a-7w4fNrjkrE1CDes-KvuFRwNPL7";
                 downloadPdfFile(link, pdfName);
 
 
@@ -446,14 +446,14 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
                 String pdfName = matchYear + "cse_dip";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15Rq6V-tfnEh46uk7dSUgnwU8-FgIdIBj";
                 downloadPdfFile(link, pdfName);
 
             }
 
             if (globalView.getId() == R.id.dwhdmid) {
                 String pdfName = matchYear + "cse_dwhdm";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15SKg4pLEhsU8yWA_dWSekvqbhmprV6Ei";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -539,14 +539,14 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/10UNsDvdMWxUjpGM8GtOwYm2ohvZblkec/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -555,7 +555,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1ZeYjfzAzAEXPg_MMRbSrLzwSWZWwuptz/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -563,7 +563,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dwhdmid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -641,14 +641,14 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
         if (examyear.equals("Spring -2019")) {
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1hFeJaPrS_dKSRNe7nxQIpUZFIeTLJRz-/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/18zLjPDnJ_6Q_puZ-schJggKdvrYq30NE/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -657,7 +657,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/10WO23yeoeZyyqDelkFfhuU2VmRp9LdeR/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -665,7 +665,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dwhdmid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/1_gQ3I-g9s80IPQQB5eH7Cl4oZRn7dzZw/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -675,14 +675,14 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
         if (examyear.equals("Summer -2020")) {
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/15U0s82n6EQn-9jVFM2RMLnfRmrf_n9dH/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
             }
 
             if (globalView.getId() == R.id.dspid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/15Tm5a-7w4fNrjkrE1CDes-KvuFRwNPL7/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -691,7 +691,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dipid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/15Rq6V-tfnEh46uk7dSUgnwU8-FgIdIBj/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 
@@ -699,7 +699,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.dwhdmid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/15SKg4pLEhsU8yWA_dWSekvqbhmprV6Ei/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
 

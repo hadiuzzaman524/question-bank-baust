@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.signuplogin));
 
         setContentView(R.layout.activity_main);
+
+
         cse = findViewById(R.id.cseid);
         eee = findViewById(R.id.eeeid);
         me = findViewById(R.id.meid);

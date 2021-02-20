@@ -6,79 +6,121 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AboutUs">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
+                android:justificationMode="inter_word"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:textSize="17sp"
-                android:textColor="#000"
+                android:layout_gravity="center_vertical|end"
                 android:text="@string/aboutus"
-                ></TextView>
+                android:textSize="17sp"></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Developer"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textColor="#000"
-                ></TextView>
+                android:layout_marginTop="25dp"
+                android:textSize="30sp"></TextView>
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/signuplogin"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                ></View>
+                android:layout_marginRight="10dp"
+                android:background="@color/signuplogin"></View>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/hadi_picture"
-                ></LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/oishi_picture"
-                ></LinearLayout>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/meup"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#3f51b5"
+                app:civ_shadow_radius="4" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Author"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textColor="#000"
-                ></TextView>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/signuplogin"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                ></View>
+                android:text="Md. Hadiuzzaman"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="hadiuzzaman.cse.bd@gmail.com"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="01785304677"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CSE, 4th year(BAUST)"
+                android:textStyle="italic"/>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mypict"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#3f51b5"
+                app:civ_shadow_radius="4" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:textSize="17sp"
-                android:textColor="#000"
-                android:text="@string/author"
-                ></TextView>
-
+                android:text="Najmun Oishi"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="oishinajmun456@gmail.com"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="01302117664"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CSE, 3rd year(BAUST)"
+                android:layout_marginBottom="50dp"
+                android:textStyle="italic"/>
 
         </LinearLayout>
     </ScrollView>

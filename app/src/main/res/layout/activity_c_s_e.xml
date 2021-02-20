@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#EFE2E2"
+
     android:layout_height="match_parent"
     tools:context=".departments.CSE">
 
@@ -16,10 +16,9 @@
         android:divider="#EFE2E2"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
-        android:listSelector="@color/colorPrimary"
         android:id="@+id/g_1_bookslistviewid"
         >
-
     </ListView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

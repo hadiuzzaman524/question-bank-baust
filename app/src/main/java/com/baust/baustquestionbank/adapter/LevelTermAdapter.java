@@ -47,16 +47,15 @@ public class LevelTermAdapter extends BaseAdapter {
               inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
               convertView = inflater.inflate(R.layout.yearview, parent, false);
           }
-          ImageView imageView = convertView.findViewById(R.id.booklistid);
+        //  ImageView imageView = convertView.findViewById(R.id.booklistid);
           TextView textView = convertView.findViewById(R.id.dldid);
 
-          imageView.setImageResource(flags[position]);
+        //  imageView.setImageResource(flags[position]);
           textView.setText(bookName[position]);
 
       }
       catch (Exception e)
       {
-
       }
         return convertView;
     }

@@ -7,8 +7,10 @@
     <string name="hum_2177_fundamentals_of_economics">HUM 2177 (Fundamentals of Economics)</string>
     <string name="open_">Open</string>
     <string name="close_">Close</string>
-    <string name="aboutus">"This is a free and useful app for all student's. It is very important for the university to have a questions bank.All the questions of the semester finals of each department of the last year can be found here together. so, its easy to use and its free.All question papers are now in your hand,  just find your paper click download and start solving."</string>
-    <string name="author">Hello Users,This app has been made keeping inmind the needs of the students ofBAUST. So, if you have any suggestion,please feel free to contact us.Everyone uses it and best of luck!!</string>
+    <string name="aboutus">"Hello user,  This app has been made kipping in mind the need of the students of BAUST. Using this app you can access the previous year's final examination question's. You can download or read the question in PDF format from online. If you have any doubt or you found any kind of bug please feel free to contact with us.
+
+Let's make your journey easier with this app."</string>
+
     <string-array name="lvelterm">
         <item> Level-1 Term I</item>
         <item> Level-1 Term II </item>
@@ -21,8 +23,10 @@
     </string-array>
 
     <string-array name="yearname">
+        <!--
         <item>Fall -2017</item>
         <item>Spring -2017</item>
+        -->
         <item>Fall -2018</item>
         <item>Spring -2018</item>
         <item>Fall -2019</item>

@@ -27,7 +27,7 @@ public class L3_T2 extends AppCompatActivity {
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.signuplogin));
-        this.setTitle("DEPARTMENT OF CSE");
+        this.setTitle("Level-3 Term II");
 
         setContentView(R.layout.activity_l3__t2);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

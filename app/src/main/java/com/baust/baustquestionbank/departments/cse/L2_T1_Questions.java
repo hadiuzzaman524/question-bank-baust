@@ -207,6 +207,22 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
                 bottomSheet.show(getSupportFragmentManager(),pdfName);
             }
         }
+        if (view.getId()==R.id.scs)
+        {
+            String pdfName = Y+"cse_scs";
+            if (file.isDownload(pdfName)) {
+
+                Uri uri = file.open(pdfName);
+                Intent intent = new Intent(L2_T1_Questions.this, PdfView.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("uripath", uri);
+                startActivity(intent);
+            }
+            else {
+                Sheet bottomSheet=new Sheet();
+                bottomSheet.show(getSupportFragmentManager(),pdfName);
+            }
+        }
 
     }
     @Override
@@ -523,7 +539,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
                 String pdfName = matchYear+"cse_dld";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15VETwx10va4GaVR9G9A08H2B2_AgSaXm";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -532,13 +548,21 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
             {
                 String pdfName = matchYear+"cse_ds";
 
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15gBEWxfyOudnigcctfdDP6FkFWEm9Kr0";
                 downloadPdfFile(link, pdfName);
 
 
 
             }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
+                String link = "https://drive.google.com/uc?export=download&id=15fQ7a_ypn0ZPPLpAkMvJEIC9oGP98yKt";
+                downloadPdfFile(link, pdfName);
 
+
+
+            }
             if (globalView.getId()==R.id.oopid)
             {
                 String pdfName = matchYear+"cse_oop";
@@ -560,7 +584,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
             if (globalView.getId()==R.id.mathiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
-                String link = "";
+                String link = "https://drive.google.com/uc?export=download&id=15Y8x1ubSJqJISIP3hVx0JZpRPXbcbgiV";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -805,13 +829,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             if (globalView.getId() == R.id.dldid) {
 
-                String link = "";
+                String link = "https://drive.google.com/file/d/15VETwx10va4GaVR9G9A08H2B2_AgSaXm/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
             }
 
             if (globalView.getId()==R.id.dsid)
             {
-                String link = "";
+                String link = "https://drive.google.com/file/d/15gBEWxfyOudnigcctfdDP6FkFWEm9Kr0/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
 
             }
@@ -830,10 +854,16 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
 
             }
+            if (globalView.getId()==R.id.scs)
+            {
+                String link = "https://drive.google.com/file/d/15fQ7a_ypn0ZPPLpAkMvJEIC9oGP98yKt/view?usp=sharing";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
 
             if (globalView.getId()==R.id.mathiiid)
             {
-                String link = "";
+                String link = "https://drive.google.com/file/d/15Y8x1ubSJqJISIP3hVx0JZpRPXbcbgiV/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
 
             }
