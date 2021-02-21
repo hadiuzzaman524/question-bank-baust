@@ -278,7 +278,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId() == R.id.cgid) {
 
                 String pdfName = matchYear + "cse_cg";
-                String link = "https://drive.google.com/uc?export=download&id=1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs";
+                String link = "https://drive.google.com/uc?export=download&id=15zcRDEwsHcAz8mijsW_mDIwa9dW10DVz";
                 downloadPdfFile(link, pdfName);
 
 
@@ -539,7 +539,7 @@ public class L4_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId() == R.id.cgid) {
 
-                String link = "https://drive.google.com/file/d/1zJMYDFIPlOVg55SkEwOFW8nlKFN9zpzs/view?usp=sharing";
+                String link = "https://drive.google.com/file/d/15zcRDEwsHcAz8mijsW_mDIwa9dW10DVz/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L4_T2_Questions.this, link);
 
             }

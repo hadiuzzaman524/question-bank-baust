@@ -270,9 +270,16 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
+                String link = "";
+                downloadPdfFile(link, pdfName);
+
+            }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
@@ -321,9 +328,16 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
+                String link = "";
+                downloadPdfFile(link, pdfName);
+
+            }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
@@ -372,11 +386,18 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
                 String link = "";
                 downloadPdfFile(link, pdfName);
+            }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
+                String link = "";
+                downloadPdfFile(link, pdfName);
+
             }
         }
 
@@ -422,9 +443,16 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
+                String link = "";
+                downloadPdfFile(link, pdfName);
+
+            }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
                 String link = "";
                 downloadPdfFile(link, pdfName);
 
@@ -472,8 +500,15 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
                 downloadPdfFile(link, pdfName);
 
             }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
-            if (globalView.getId()==R.id.mathiiid)
+            }
+
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
                 String link = "";
@@ -521,8 +556,14 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
                 downloadPdfFile(link, pdfName);
 
             }
+            if (globalView.getId()==R.id.scs)
+            {
+                String pdfName = matchYear+"cse_scs";
+                String link = "";
+                downloadPdfFile(link, pdfName);
 
-            if (globalView.getId()==R.id.mathiiid)
+            }
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
                 String link = "";
@@ -581,7 +622,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String pdfName = matchYear+"cse_mathii";
                 String link = "https://drive.google.com/uc?export=download&id=15Y8x1ubSJqJISIP3hVx0JZpRPXbcbgiV";
@@ -626,7 +667,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
+            if (globalView.getId()==R.id.scs)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -664,7 +711,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
+            if (globalView.getId()==R.id.scs)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -702,7 +755,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
+            if (globalView.getId()==R.id.scs)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -740,7 +799,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
+            if (globalView.getId()==R.id.scs)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -778,7 +843,13 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
+
+            }
+            if (globalView.getId()==R.id.scs)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -815,8 +886,14 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
 
             }
+            if (globalView.getId()==R.id.scs)
+            {
+                String link = "";
+                checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
 
-            if (globalView.getId()==R.id.mathiiid)
+            }
+
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String link = "";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);
@@ -861,7 +938,7 @@ private ImageView DLDd,DSd,OOPd,EDId,Mathiiid;
 
             }
 
-            if (globalView.getId()==R.id.mathiiid)
+            if (globalView.getId()==R.id.mathiiiid)
             {
                 String link = "https://drive.google.com/file/d/15Y8x1ubSJqJISIP3hVx0JZpRPXbcbgiV/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T1_Questions.this, link);

@@ -354,7 +354,7 @@ public class L2_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId()==R.id.nmid)
             {
                 String pdfName = matchYear+"cse_nm";
-                String link = "https://drive.google.com/uc?export=download&id=1QnFoBnDgRxbk2BQovMILPpa1yMPfg9lL";
+                String link = "https://drive.google.com/uc?export=download&id=1cUXPQrVL5t5hzZluCNojE5d6vvsZKoe5";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -502,7 +502,7 @@ public class L2_T2_Questions extends AppCompatActivity implements View.OnClickLi
             if (globalView.getId()==R.id.nmid)
             {
                 String pdfName = matchYear+"cse_nm";
-                String link = "https://drive.google.com/uc?export=download&id=1gGJGyPifJEEYgMjpxVC5DO9PtbqNaN3H";
+                String link = "https://drive.google.com/uc?export=download&id=135C6FTBBnNl7TEZrjrhwx3GB2oADdfoV";
                 downloadPdfFile(link, pdfName);
 
             }
@@ -681,7 +681,7 @@ public class L2_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId()==R.id.nmid)
             {
-                String link = "https://drive.google.com/file/d/1QnFoBnDgRxbk2BQovMILPpa1yMPfg9lL/view?usp=sharing";
+                String link = "https://drive.google.com/file/d/1cUXPQrVL5t5hzZluCNojE5d6vvsZKoe5/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T2_Questions.this, link);
 
 
@@ -807,7 +807,7 @@ public class L2_T2_Questions extends AppCompatActivity implements View.OnClickLi
 
             if (globalView.getId()==R.id.nmid)
             {
-                String link = "https://drive.google.com/file/d/1gGJGyPifJEEYgMjpxVC5DO9PtbqNaN3H/view?usp=sharing";
+                String link = "https://drive.google.com/file/d/135C6FTBBnNl7TEZrjrhwx3GB2oADdfoV/view?usp=sharing";
                 checkAndOpenPdfFromOnline(L2_T2_Questions.this, link);
 
 
