@@ -22,16 +22,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/BAUST_QUESTION_BANK.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/BAUST_QUESTION_BANK.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L2_T1_Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L2_T1_Questions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L2_T2_Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L2_T2_Questions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L4_T2_Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/baust/baustquestionbank/departments/cse/L4_T2_Questions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,12 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="G:\Education Area\Question_Bank.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,15 +70,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_24_2" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-02-20T13:47:06.714Z" />
+    <property name="BundleExportedModule" value="BAUST_QUESTION_BANK.app" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Android_11" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-02-21T09:43:05.734Z" />
+    <property name="ExportApk.ApkPath" value="C:\Users\Md Hadiuzzaman\OneDrive\Desktop\APP MATERIAL" />
+    <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../APP MATERIAL" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -349,34 +361,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1613829021986">
+    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1613900874171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1613829021986" />
-    <state x="469" y="167" key="FileChooserDialogImpl" timestamp="1612008842738">
+    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1613900874171" />
+    <state x="469" y="167" key="FileChooserDialogImpl" timestamp="1613919037055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="469" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612008842738" />
-    <state width="1491" height="225" key="GridCell.Tab.0.bottom" timestamp="1613813638481">
+    <state x="469" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613919037055" />
+    <state width="1491" height="301" key="GridCell.Tab.0.bottom" timestamp="1613901702560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613813638481" />
-    <state width="1491" height="225" key="GridCell.Tab.0.center" timestamp="1613813638480">
+    <state width="1491" height="301" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613901702560" />
+    <state width="1491" height="301" key="GridCell.Tab.0.center" timestamp="1613901702560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613813638480" />
-    <state width="1491" height="225" key="GridCell.Tab.0.left" timestamp="1613813638480">
+    <state width="1491" height="301" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613901702560" />
+    <state width="1491" height="301" key="GridCell.Tab.0.left" timestamp="1613901702560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613813638480" />
-    <state width="1491" height="225" key="GridCell.Tab.0.right" timestamp="1613813638481">
+    <state width="1491" height="301" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613901702560" />
+    <state width="1491" height="301" key="GridCell.Tab.0.right" timestamp="1613901702560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613813638481" />
-    <state x="0" y="60" key="SettingsEditor" timestamp="1613813215648">
+    <state width="1491" height="301" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613901702560" />
+    <state x="315" y="69" key="SettingsEditor" timestamp="1613900479823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="60" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613813215648" />
+    <state x="315" y="69" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613900479823" />
     <state x="504" y="190" key="chooseDestDirectoryDialog" timestamp="1613829035080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -385,5 +397,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-33" y="58" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1613267871947" />
+    <state x="686" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613917552683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="686" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1613917552683" />
   </component>
 </project>
